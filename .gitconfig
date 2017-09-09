@@ -1,6 +1,10 @@
 [alias]
+	cam = commit --amend
 	c = commit -am
 	fpush = push --force
+	up = pull
+	p = push
+	po = push origin
 	s = status
 	sclone = clone --depth=1
 	amend = commit --amend --all
@@ -12,12 +16,16 @@
 	cherrypick = cherry-pick
 	cherry = cherry-pick
 	cp = cherry-pick
+	bt = branch -u
+	ba = branch -va
+	bd = branch -d
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
 	reup = rebase-update # depot_tools specific
 	git = !exec git
+	it = !git init && git commit -m “root” --allow-empty
 
 [core]
 	excludesfile = ~/.gitignore
@@ -76,7 +84,6 @@
 [url "git@gist.github.com:"]
 	pushInsteadOf = "gist:"
 	pushInsteadOf = "git://gist.github.com/"
-	
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 

@@ -23,7 +23,7 @@ alias cask='brew cask' # i <3 u cask
 alias where=which # sometimes i forget
 
 # typos
-alias brwe=brew  
+alias brwe=brew
 alias gti=git
 alias yearn=yarn
 
@@ -52,6 +52,12 @@ alias g="git"
 alias gi="git"
 alias v="vim"
 alias ungz="gunzip -k"
+alias gst="git status"
+alias hs_up="cd ~/Source/homestead; vagrant up; vagrant ssh; cd -"
+alias hs_ssh="cd ~/Source/homestead; vagrant ssh"
+alias hs_reload="cd ~/Source/homestead; vagrant reload --provision; cd -"
+alias hs_ssp="cd ~/Source/homestead; vagrant suspend; cd -"
+alias hs_do="cd ~/Source/homestead; vagrant halt; cd -"
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -61,3 +67,21 @@ alias fs="stat -f \"%z bytes\""
 # Update installed Ruby gems, Homebrew, npm, and their installed packages
 alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
 alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-document'
+
+## Custom
+alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.restart='nginx.stop; nginx.start'
+
+alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist"
+alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist"
+alias php-fpm.restart='php-fpm.stop; and php-fpm.start'
+
+alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql.restart='mysql.stop; and  mysql.start'
+
+alias nginx.logs.error='tail -250f /Users/tucq/.homebrew/var/log/nginx/error.log'
+alias nginx.logs.access='tail -250f /Users/tucq/.homebrew/var/log/nginx/access.log'
+alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
+alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/default-ssl.access.log'

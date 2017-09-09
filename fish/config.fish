@@ -1,8 +1,7 @@
-set default_user "paulirish"
-set default_machine "paulirish-macbookair2"
+set default_user "tucq"
+set default_machine "Tu’s MacBook Pro"
 
-
-source ~/.config/fish/path.fish
+# source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/chpwd.fish
 source ~/.config/fish/functions.fish
@@ -57,6 +56,8 @@ set -g fish_color_valid_path --underline
 
 set -g fish_color_dimmed 555
 set -g fish_color_separator 999
+#set -g fish_color_dimmed 87af5f
+#set -g fish_color_separator 87af5f
 
 # Git prompt status
 set -g __fish_git_prompt_showdirtystate 'yes'

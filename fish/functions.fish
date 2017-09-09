@@ -109,3 +109,35 @@ function emptytrash -d 'Empty the Trash on all mounted volumes and the main HDD.
     rm -rfv ~/Library/Caches/com.spotify.client/Data
     rm -rfv ~/Library/Caches/Firefox/Profiles/98ne80k7.dev-edition-default/cache2
 end
+
+function gab
+   set curr_branch (git rev-parse --abbrev-ref HEAD);
+   set curr_remote (git config branch.$curr_branch.remote);
+   set curr_merge_branch (git config branch.$curr_branch.merge | cut -d / -f 3);
+   git rev-list --left-right --count $curr_branch...$curr_remote/$curr_merge_branch | tr -s '\t' '|';
+end
+
+function branch_cleanup
+  while true
+    read -l -p branch_cleanup_confirm_prompt confirm
+    
+    switch $confirm
+      case Y y ''
+        git branch -D $argv
+        git push --delete origin $argv
+        return 0
+      case N n
+        echo "Cancel clean up branch request"
+        return 1
+    end
+  end
+end
+
+function branch_cleanup_confirm_prompt
+  echo 'Do you want to continue? [Y/n] '
+end
+
+function nginx.enable
+  ln -sfv "/Users/tucq/.homebrew/etc/nginx/site-available/$argv"  "/Users/tucq/.homebrew/etc/nginx/site-enable/$argv"
+end
+
