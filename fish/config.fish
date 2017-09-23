@@ -1,11 +1,11 @@
 set default_user "tucq"
 set default_machine "Tu’s MacBook Pro"
 
-# source ~/.config/fish/path.fish
+source ~/.config/fish/path.fish
 source ~/.config/fish/aliases.fish
 source ~/.config/fish/chpwd.fish
 source ~/.config/fish/functions.fish
-source ~/.config/fish/chromium.fish
+# source ~/.config/fish/chromium.fish
 source ~/.config/fish/conf.d/scmpuff.fish
 
 # for things not checked into git..
@@ -58,6 +58,8 @@ set -g fish_color_dimmed 555
 set -g fish_color_separator 999
 #set -g fish_color_dimmed 87af5f
 #set -g fish_color_separator 87af5f
+
+set pure_color_blue (set_color "D7FB00") # Like Light Cyan on Bash
 
 # Git prompt status
 set -g __fish_git_prompt_showdirtystate 'yes'

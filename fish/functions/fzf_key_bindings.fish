@@ -1,1 +1,0 @@
-/Users/tucq/.homebrew/opt/fzf/shell/key-bindings.fish

@@ -1,11 +1,13 @@
 [alias]
 	cam = commit --amend
-	c = commit -am
+    c = commit -am
+    cm = commit -m
 	fpush = push --force
 	up = pull
 	p = push
 	po = push origin
 	s = status
+  st = status
 	sclone = clone --depth=1
 	amend = commit --amend --all
 	undocommit = reset HEAD~
@@ -18,7 +20,8 @@
 	cp = cherry-pick
 	bt = branch -u
 	ba = branch -va
-	bd = branch -d
+    bd = branch -d
+    fa = fetch --all
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"

@@ -19,6 +19,7 @@ alias where=which # sometimes i forget
 alias brwe=brew  #typos
 
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+alias de-procrastinate='cd ~/.dotfiles/de-procrastinate && sudo sh script.sh && cd -'
 
 alias ag='ag -f --hidden'
 
@@ -74,6 +75,12 @@ alias free_diskspace_report="diskspace_report"
 alias g="git"
 alias v="vim"
 alias ungz="gunzip -k"
+alias gst="git status"
+alias hs_up="cd ~/Homestead; vagrant up; vagrant ssh; cd -"
+alias hs_ssh="cd ~/Homestead; vagrant ssh"
+alias hs_reload="cd ~/Homestead; vagrant reload --provision; cd -"
+alias hs_ssp="cd ~/Homestead; vagrant suspend; cd -"
+alias hs_do="cd ~/Homestead; vagrant halt; cd -"
 
 # File size
 alias fs="stat -f \"%z bytes\""

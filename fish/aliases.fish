@@ -28,6 +28,7 @@ alias gti=git
 alias yearn=yarn
 
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+alias de-procrastinate='cd ~/.dotfiles/de-procrastinate; sudo sh script.sh; cd -'
 
 alias push="git push"
 
@@ -53,11 +54,11 @@ alias gi="git"
 alias v="vim"
 alias ungz="gunzip -k"
 alias gst="git status"
-alias hs_up="cd ~/Source/homestead; vagrant up; vagrant ssh; cd -"
-alias hs_ssh="cd ~/Source/homestead; vagrant ssh"
-alias hs_reload="cd ~/Source/homestead; vagrant reload --provision; cd -"
-alias hs_ssp="cd ~/Source/homestead; vagrant suspend; cd -"
-alias hs_do="cd ~/Source/homestead; vagrant halt; cd -"
+alias hs_up="cd ~/Homestead; vagrant up; vagrant ssh; cd -"
+alias hs_ssh="cd ~/Homestead; vagrant ssh"
+alias hs_reload="cd ~/Homestead; vagrant reload --provision; cd -"
+alias hs_ssp="cd ~/Homestead; vagrant suspend; cd -"
+alias hs_do="cd ~/Homestead; vagrant halt; cd -"
 
 # File size
 alias fs="stat -f \"%z bytes\""

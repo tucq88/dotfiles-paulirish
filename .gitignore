@@ -6,6 +6,7 @@ third_party/WebKit/Source/devtools/front_end/audits2/lighthouse/renderer/report-
 .vim/viminfo
 .vim/swaps/*
 .vim/undo
+.vim/.netrwhist
 
 # git credential file
 .gitconfig.local
