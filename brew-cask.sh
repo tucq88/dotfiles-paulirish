@@ -18,6 +18,7 @@ brew cask install gyazo
 brew cask install macpass
 brew cask install rescuetime
 brew cask install alfred
+brew cask install toggldesktop
 
 # dev
 brew cask install iterm2
@@ -26,6 +27,7 @@ brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install postman
+brew cask install imageoptim
 
 # communication
 brew cask install slack

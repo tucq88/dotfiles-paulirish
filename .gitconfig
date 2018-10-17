@@ -7,7 +7,7 @@
 	p = push
 	po = push origin
 	s = status
-  st = status
+  	st = status
 	sclone = clone --depth=1
 	amend = commit --amend --all
 	undocommit = reset HEAD~
