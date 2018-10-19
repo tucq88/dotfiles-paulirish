@@ -1,0 +1,1 @@
+/Users/tucq/.config/fish/functions/pure/fish_prompt.fish

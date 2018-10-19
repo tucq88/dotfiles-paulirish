@@ -14,7 +14,7 @@ if test -e "$HOME/.extra.fish";
 end
 
 # THEME PURE #
-set fish_function_path $HOME/.config/fish/functions/pure $fish_function_path
+set fish_function_path $HOME/.config/fish/functions/pure/functions/ $fish_function_path
 
 export GOPATH=$HOME/.go/
 
@@ -103,4 +103,3 @@ set -gx LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 # tabtab source for yarn package
 # uninstall by removing these lines or running `tabtab uninstall yarn`
 [ -f $HOME/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish ]; and . $HOME/.config/yarn/global/node_modules/tabtab/.completions/yarn.fish
-
