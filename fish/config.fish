@@ -14,7 +14,7 @@ if test -e "$HOME/.extra.fish";
 end
 
 # THEME PURE #
-set fish_function_path $HOME/.config/fish/functions/pure/functions/ $fish_function_path
+set fish_function_path $HOME/.config/fish/functions/pure $fish_function_path
 
 export GOPATH=$HOME/.go/
 

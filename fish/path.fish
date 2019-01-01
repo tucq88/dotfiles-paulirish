@@ -19,5 +19,5 @@ end
 
 # GO
 set PA $PA "/Users/paulirish/.go/bin"
-set PA $PATH /Users/tucq/.composer/vendor/bin
+set PA $PATH
 set --export PATH $PA

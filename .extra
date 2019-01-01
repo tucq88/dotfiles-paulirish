@@ -1,5 +1,2 @@
-PATH=$PATH:~/bin:~/.composer/vendor/bin:~/.homebrew/bin
-# :~/bin:~/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin
+PATH=~/bin:~/.composer/vendor/bin:~/.homebrew/bin:~/.homebrew/sbin:$PATH
 export PATH
-
-# VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
