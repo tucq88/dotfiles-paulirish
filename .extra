@@ -1,2 +1,3 @@
 PATH=~/bin:~/.composer/vendor/bin:~/.homebrew/bin:~/.homebrew/sbin:$PATH
+# PATH=$HOME/.homebrew/bin:$HOME/.homebrew/sbin:~/bin:~/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:/Applications/Postgres.app/Contents/Versions/9.5/bin:$HOME/.nvm:$PATH
 export PATH

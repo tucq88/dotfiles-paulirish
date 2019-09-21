@@ -120,7 +120,7 @@ end
 function branch_cleanup
   while true
     read -l -p branch_cleanup_confirm_prompt confirm
-    
+
     switch $confirm
       case Y y ''
         git branch -D $argv
@@ -141,3 +141,6 @@ function nginx.enable
   ln -sfv "/Users/tucq/.homebrew/etc/nginx/site-available/$argv"  "/Users/tucq/.homebrew/etc/nginx/site-enable/$argv"
 end
 
+function add_pubkey
+  cat ~/.ssh/id_rsa.pub | ssh $argv[1] 'cat >> ~/.ssh/authorized_keys'
+end

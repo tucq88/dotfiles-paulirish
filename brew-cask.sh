@@ -28,11 +28,16 @@ brew cask install virtualbox
 brew cask install vagrant
 brew cask install postman
 brew cask install imageoptim
+brew cask install notion
 
 # communication
 brew cask install slack
 brew cask install skype
 brew cask install skype-for-business
+brew cask install telegram
+brew cask install workplace-chat
+brew cask install whatsapp
+brew cask install dingtalk
 
 # browsers
 brew cask install google-chrome
@@ -47,4 +52,4 @@ brew cask install transmission
 brew cask install coconutbattery
 brew cask install keka
 brew cask install qlmarkdown
-
+brew cask install caffeine

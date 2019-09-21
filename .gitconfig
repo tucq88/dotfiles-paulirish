@@ -1,30 +1,30 @@
 [alias]
 	cam = commit --amend
-    c = commit -am
-    cm = commit -m
+	c = commit -am
+	cm = commit -m
 	fpush = push --force
 	up = pull
 	p = push
 	po = push origin
 	s = status
-  	st = status
+	st = status
 	sclone = clone --depth=1
 	amend = commit --amend --all
 	undocommit = reset HEAD~
 	hreset = reset --hard
 	co = checkout
-	df = diff --color --color-words --abbrev
+	df = diff --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	cherrypick = cherry-pick
 	cherry = cherry-pick
 	cp = cherry-pick
 	bt = branch -u
 	ba = branch -va
-    bd = branch -d
-    fa = fetch --all
+	bd = branch -d
+	fa = fetch --all
 
 	# Show the diff between the latest commit and the current state
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat | diff-so-fancy"
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
 	reup = rebase-update # depot_tools specific
 	git = !exec git
@@ -33,6 +33,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [pager]
 	# insanely beautiful diffs ==> npm install -g diff-so-fancy
@@ -56,7 +57,7 @@
     newMoved = cyan
     oldMoved = blue
 [color "diff-highlight"]
-	oldNormal = red bold
+	oldNormal = "red bold"
 	oldHighlight = "red bold 52"
 	newNormal = "green bold"
 	newHighlight = "green bold 22"

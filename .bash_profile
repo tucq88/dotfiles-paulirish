@@ -8,9 +8,9 @@ done
 unset file
 
 # to help sublimelinter etc with finding my PATHS
-case $- in
-   *i*) source ~/.extra
-esac
+#case $- in
+#   *i*) source ~/.extra
+#esac
 
 # generic colouriser
 GRC=`which grc`
@@ -136,4 +136,4 @@ shopt -s globstar 2> /dev/null
 sh ~/.dotfiles/progress.sh
 
 # Go to fish after all set
-fish
+# fish
