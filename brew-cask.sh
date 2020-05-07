@@ -52,4 +52,5 @@ brew cask install transmission
 brew cask install coconutbattery
 brew cask install keka
 brew cask install qlmarkdown
+brew cask install qlvideo
 brew cask install caffeine
